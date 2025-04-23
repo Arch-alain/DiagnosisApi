@@ -4,7 +4,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # Load model once (global variable)
-model = YOLO("app/models/best.pt")
+model = YOLO("app/models/best_yolo_v10_50_epochs.pt")
 # app\models\best.pt
 
 def detect_and_quantify(image_path, confidence_threshold=0.5):
