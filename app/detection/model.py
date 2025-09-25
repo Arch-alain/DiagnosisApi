@@ -1,18 +1,44 @@
 from ultralytics import YOLO
+# import ultralytics_custom  # make sure it's importable
+
 import logging
 import os
 from typing import Tuple, Dict, Optional, List
+import torch
+# os.environ['TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD'] = '1'
+# model = YOLO('best.pt')
 
 logger = logging.getLogger(__name__)
-
 class MalariaDetector:
     def __init__(self, model_path: str = "app/models/malaria_yolov10.pt"):
         """Initialize the YOLO model for malaria detection."""
         try:
             if not os.path.exists(model_path):
                 raise FileNotFoundError(f"Model file not found at {model_path}")
-            self.model = YOLO(model_path)
-            logger.info(f"Successfully loaded YOLO model from {model_path}")
+            # os.environ['TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD'] = '1'
+                        # Solution 2: Add safe globals permanently (affects entire application)
+         
+            # self.model = YOLO(model_path)
+            # logger.info(f"Successfully loaded YOLO model from {model_path}")
+
+
+                        # Solution 3: Monkey patch torch.load temporarily
+            original_load = torch.load
+            
+            def safe_load(*args, **kwargs):
+                # Force weights_only=False for trusted models
+                kwargs['weights_only'] = False
+                return original_load(*args, **kwargs)
+            
+            # Temporarily replace torch.load
+            torch.load = safe_load
+            
+            try:
+                self.model = YOLO(model_path)
+                logger.info(f"Successfully loaded YOLO model from {model_path}")
+            finally:
+                # Restore original torch.load
+                torch.load = original_load
         except Exception as e:
             logger.error(f"Failed to load YOLO model: {str(e)}")
             raise RuntimeError(f"Model initialization failed: {str(e)}")

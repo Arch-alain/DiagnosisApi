@@ -1136,3 +1136,1276 @@
 2025-07-13 22:24:45,655 - INFO - app.detection.analysis - Analysis summary: 10/10 images successfully processed
 2025-07-13 22:24:45,655 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
 2025-07-13 22:24:45,658 - INFO - werkzeug - 192.168.65.1 - - [13/Jul/2025 22:24:45] "POST /diagnose HTTP/1.1" 200 -
+2025-07-24 12:07:38,991 - INFO - root - Logging configuration completed
+2025-07-24 12:07:45,516 - ERROR - app.detection.model - Failed to load YOLO model: No module named 'ultralytics_custom'
+2025-07-24 12:09:31,008 - INFO - root - Logging configuration completed
+2025-07-24 12:09:31,018 - ERROR - app.detection.model - Failed to load YOLO model: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL ultralytics_custom.nn.tasks.DetectionModel was not an allowed global by default. Please use `torch.serialization.add_safe_globals([ultralytics_custom.nn.tasks.DetectionModel])` or the `torch.serialization.safe_globals([ultralytics_custom.nn.tasks.DetectionModel])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+2025-07-24 12:11:51,093 - INFO - root - Logging configuration completed
+2025-07-24 12:11:51,105 - ERROR - app.detection.model - Failed to load YOLO model: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL ultralytics_custom.nn.tasks.DetectionModel was not an allowed global by default. Please use `torch.serialization.add_safe_globals([ultralytics_custom.nn.tasks.DetectionModel])` or the `torch.serialization.safe_globals([ultralytics_custom.nn.tasks.DetectionModel])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+2025-07-24 13:17:17,481 - INFO - root - Logging configuration completed
+2025-07-24 13:17:17,483 - ERROR - app.detection.model - Failed to load YOLO model: __init__() got an unexpected keyword argument 'weights_only'
+2025-07-25 08:05:06,163 - INFO - root - Logging configuration completed
+2025-07-25 08:05:11,579 - ERROR - app.detection.model - Failed to load YOLO model: No module named 'ultralytics_custom'
+2025-07-25 10:20:53,612 - INFO - root - Logging configuration completed
+2025-07-25 10:20:53,801 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/malaria_yolov10.pt
+2025-07-25 10:20:53,802 - INFO - app - Flask application initialized successfully
+2025-07-25 10:20:53,805 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-07-25 10:20:53,805 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-07-30 09:33:35,265 - INFO - root - Logging configuration completed
+2025-07-30 09:33:35,545 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/malaria_yolov10.pt
+2025-07-30 09:33:35,546 - INFO - app - Flask application initialized successfully
+2025-07-30 09:33:35,551 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-07-30 09:33:35,551 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-07-30 09:45:56,491 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-07-30 09:45:56,495 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-07-30 09:45:56,495 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pf_6.jpg
+2025-07-30 09:45:56,500 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_6.jpg
+2025-07-30 09:45:58,499 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pf_7.jpg
+2025-07-30 09:45:58,501 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_7.jpg
+2025-07-30 09:45:58,840 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pf_9.jpg
+2025-07-30 09:45:58,844 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_9.jpg
+2025-07-30 09:45:59,152 - INFO - app.detection.model - Detection completed for /app/uploads/pf_9.jpg: No parasites detected, 0 WBCs
+2025-07-30 09:45:59,153 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pf_50.jpg
+2025-07-30 09:45:59,155 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_50.jpg
+2025-07-30 09:45:59,457 - INFO - app.detection.model - Detection completed for /app/uploads/pf_50.jpg: No parasites detected, 1 WBCs
+2025-07-30 09:45:59,457 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pf_51.jpg
+2025-07-30 09:45:59,458 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-07-30 09:45:59,761 - INFO - app.detection.model - Detection completed for /app/uploads/pf_51.jpg: No parasites detected, 0 WBCs
+2025-07-30 09:45:59,762 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pf_51.jpg
+2025-07-30 09:45:59,762 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-07-30 09:46:00,086 - INFO - app.detection.model - Detection completed for /app/uploads/pf_51.jpg: No parasites detected, 0 WBCs
+2025-07-30 09:46:00,086 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pf_52.jpg
+2025-07-30 09:46:00,087 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_52.jpg
+2025-07-30 09:46:00,377 - INFO - app.detection.model - Detection completed for /app/uploads/pf_52.jpg: No parasites detected, 0 WBCs
+2025-07-30 09:46:00,377 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pf_53.jpg
+2025-07-30 09:46:00,377 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_53.jpg
+2025-07-30 09:46:00,674 - INFO - app.detection.model - Detection completed for /app/uploads/pf_53.jpg: No parasites detected, 1 WBCs
+2025-07-30 09:46:00,674 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pf_57.jpg
+2025-07-30 09:46:00,677 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_57.jpg
+2025-07-30 09:46:00,977 - INFO - app.detection.model - Detection completed for /app/uploads/pf_57.jpg: No parasites detected, 1 WBCs
+2025-07-30 09:46:00,977 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pf_58.jpg
+2025-07-30 09:46:00,978 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_58.jpg
+2025-07-30 09:46:01,272 - INFO - app.detection.model - Detection completed for /app/uploads/pf_58.jpg: No parasites detected, 0 WBCs
+2025-07-30 09:46:01,273 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=3,{'Most Probable Parasite': 'PF', 'Confidence level': '0.33'}, Total WBCs=8, Ratio=0.38
+2025-07-30 09:46:01,273 - INFO - app.detection.analysis - Analysis summary: 10/10 images successfully processed
+2025-07-30 09:46:01,273 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-07-30 09:46:01,274 - INFO - werkzeug - 192.168.65.1 - - [30/Jul/2025 09:46:01] "POST /diagnose HTTP/1.1" 200 -
+2025-08-08 14:20:26,402 - INFO - root - Logging configuration completed
+2025-08-08 14:20:26,709 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/best_yolo12.pt
+2025-08-08 14:20:26,710 - INFO - app - Flask application initialized successfully
+2025-08-08 14:20:26,747 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-08-08 14:20:26,748 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-08-08 14:20:50,062 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-08-08 14:20:50,066 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-08-08 14:20:50,067 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pf_6.jpg
+2025-08-08 14:20:50,072 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_6.jpg
+2025-08-08 14:20:53,593 - ERROR - app.detection.model - Error processing image /app/uploads/pf_6.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:53,598 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_6.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:53,598 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pf_7.jpg
+2025-08-08 14:20:53,608 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_7.jpg
+2025-08-08 14:20:54,109 - ERROR - app.detection.model - Error processing image /app/uploads/pf_7.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:54,112 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_7.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:54,112 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pf_9.jpg
+2025-08-08 14:20:54,118 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_9.jpg
+2025-08-08 14:20:54,612 - ERROR - app.detection.model - Error processing image /app/uploads/pf_9.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:54,615 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_9.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:54,615 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pf_50.jpg
+2025-08-08 14:20:54,622 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_50.jpg
+2025-08-08 14:20:55,074 - ERROR - app.detection.model - Error processing image /app/uploads/pf_50.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:55,077 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_50.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:55,078 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pf_51.jpg
+2025-08-08 14:20:55,084 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-08-08 14:20:55,598 - ERROR - app.detection.model - Error processing image /app/uploads/pf_51.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:55,601 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_51.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:55,601 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pf_51.jpg
+2025-08-08 14:20:55,601 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-08-08 14:20:56,091 - ERROR - app.detection.model - Error processing image /app/uploads/pf_51.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:56,095 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_51.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:56,095 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pf_52.jpg
+2025-08-08 14:20:56,109 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_52.jpg
+2025-08-08 14:20:56,625 - ERROR - app.detection.model - Error processing image /app/uploads/pf_52.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:56,629 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_52.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:56,629 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pf_53.jpg
+2025-08-08 14:20:56,632 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_53.jpg
+2025-08-08 14:20:57,195 - ERROR - app.detection.model - Error processing image /app/uploads/pf_53.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:57,199 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_53.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:57,200 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pf_57.jpg
+2025-08-08 14:20:57,237 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_57.jpg
+2025-08-08 14:20:57,886 - ERROR - app.detection.model - Error processing image /app/uploads/pf_57.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:57,890 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_57.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:57,890 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pf_58.jpg
+2025-08-08 14:20:57,893 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_58.jpg
+2025-08-08 14:20:58,450 - ERROR - app.detection.model - Error processing image /app/uploads/pf_58.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:58,453 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_58.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:20:58,453 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-08-08 14:20:58,454 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-08-08 14:20:58,454 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-08-08 14:20:58,472 - INFO - werkzeug - 192.168.65.1 - - [08/Aug/2025 14:20:58] "POST /diagnose HTTP/1.1" 200 -
+2025-08-08 14:21:44,797 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-08-08 14:21:44,801 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-08-08 14:21:44,801 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_260.jpg
+2025-08-08 14:21:44,810 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_260.jpg
+2025-08-08 14:21:45,716 - ERROR - app.detection.model - Error processing image /app/uploads/pm_260.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:45,723 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_260.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:45,723 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-08-08 14:21:45,742 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-08-08 14:21:46,299 - ERROR - app.detection.model - Error processing image /app/uploads/pm_261.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:46,306 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_261.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:46,309 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-08-08 14:21:46,315 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-08-08 14:21:46,844 - ERROR - app.detection.model - Error processing image /app/uploads/pm_262.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:46,866 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_262.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:46,866 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-08-08 14:21:46,870 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-08-08 14:21:47,362 - ERROR - app.detection.model - Error processing image /app/uploads/pm_263.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:47,368 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_263.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:47,369 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-08-08 14:21:47,374 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-08-08 14:21:47,822 - ERROR - app.detection.model - Error processing image /app/uploads/pm_264.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:47,828 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_264.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:47,835 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-08-08 14:21:47,849 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-08-08 14:21:48,322 - ERROR - app.detection.model - Error processing image /app/uploads/pm_265.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:48,330 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_265.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:48,330 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-08-08 14:21:48,339 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-08-08 14:21:48,743 - ERROR - app.detection.model - Error processing image /app/uploads/pm_266.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:48,747 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_266.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:48,747 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-08-08 14:21:48,752 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-08-08 14:21:49,088 - ERROR - app.detection.model - Error processing image /app/uploads/pm_267.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:49,094 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_267.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:49,094 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-08-08 14:21:49,100 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-08-08 14:21:49,492 - ERROR - app.detection.model - Error processing image /app/uploads/pm_268.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:49,497 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_268.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:49,497 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-08-08 14:21:49,503 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-08-08 14:21:49,834 - ERROR - app.detection.model - Error processing image /app/uploads/pm_269.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:49,839 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_269.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 14:21:49,840 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-08-08 14:21:49,840 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-08-08 14:21:49,840 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-08-08 14:21:49,843 - INFO - werkzeug - 192.168.65.1 - - [08/Aug/2025 14:21:49] "POST /diagnose HTTP/1.1" 200 -
+2025-08-08 15:23:52,316 - INFO - root - Logging configuration completed
+2025-08-08 15:23:52,779 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/best_yolo12detect.pt
+2025-08-08 15:23:52,781 - INFO - app - Flask application initialized successfully
+2025-08-08 15:23:52,791 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-08-08 15:23:52,791 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-08-08 15:24:18,591 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-08-08 15:24:18,595 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-08-08 15:24:18,595 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_260.jpg
+2025-08-08 15:24:18,596 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_260.jpg
+2025-08-08 15:24:21,330 - ERROR - app.detection.model - Error processing image /app/uploads/pm_260.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:21,337 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_260.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:21,337 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-08-08 15:24:21,338 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-08-08 15:24:21,800 - ERROR - app.detection.model - Error processing image /app/uploads/pm_261.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:21,803 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_261.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:21,804 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-08-08 15:24:21,804 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-08-08 15:24:22,169 - ERROR - app.detection.model - Error processing image /app/uploads/pm_262.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:22,169 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_262.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:22,170 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-08-08 15:24:22,170 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-08-08 15:24:22,569 - ERROR - app.detection.model - Error processing image /app/uploads/pm_263.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:22,570 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_263.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:22,570 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-08-08 15:24:22,570 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-08-08 15:24:22,927 - ERROR - app.detection.model - Error processing image /app/uploads/pm_264.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:22,927 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_264.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:22,927 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-08-08 15:24:22,928 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-08-08 15:24:23,231 - ERROR - app.detection.model - Error processing image /app/uploads/pm_265.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:23,231 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_265.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:23,231 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-08-08 15:24:23,232 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-08-08 15:24:23,594 - ERROR - app.detection.model - Error processing image /app/uploads/pm_266.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:23,599 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_266.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:23,600 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-08-08 15:24:23,600 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-08-08 15:24:23,971 - ERROR - app.detection.model - Error processing image /app/uploads/pm_267.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:23,972 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_267.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:23,972 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-08-08 15:24:23,972 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-08-08 15:24:24,288 - ERROR - app.detection.model - Error processing image /app/uploads/pm_268.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:24,289 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_268.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:24,289 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-08-08 15:24:24,289 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-08-08 15:24:24,623 - ERROR - app.detection.model - Error processing image /app/uploads/pm_269.jpg: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:24,623 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_269.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-08-08 15:24:24,624 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-08-08 15:24:24,624 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-08-08 15:24:24,624 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-08-08 15:24:24,630 - INFO - werkzeug - 192.168.65.1 - - [08/Aug/2025 15:24:24] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 07:42:56,035 - INFO - root - Logging configuration completed
+2025-09-25 07:42:56,425 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/best_yolo12detect.pt
+2025-09-25 07:42:56,425 - INFO - app - Flask application initialized successfully
+2025-09-25 07:42:56,429 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-09-25 07:42:56,429 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-09-25 07:52:44,544 - INFO - root - Logging configuration completed
+2025-09-25 07:52:44,632 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/best_yolo12detect.pt
+2025-09-25 07:52:44,633 - INFO - app - Flask application initialized successfully
+2025-09-25 07:52:44,634 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-09-25 07:52:44,634 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-09-25 08:05:23,071 - INFO - root - Logging configuration completed
+2025-09-25 08:05:23,196 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/best_yolo12detect.pt
+2025-09-25 08:05:23,197 - INFO - app - Flask application initialized successfully
+2025-09-25 08:05:23,201 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-09-25 08:05:23,202 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-09-25 08:30:04,170 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 08:30:04,181 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 08:30:04,181 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_260.jpg
+2025-09-25 08:30:04,194 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_260.jpg
+2025-09-25 08:30:06,977 - ERROR - app.detection.model - Error processing image /app/uploads/pm_260.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:06,983 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_260.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:06,983 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 08:30:06,990 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 08:30:07,496 - ERROR - app.detection.model - Error processing image /app/uploads/pm_261.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:07,500 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_261.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:07,500 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 08:30:07,505 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 08:30:08,215 - ERROR - app.detection.model - Error processing image /app/uploads/pm_262.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:08,219 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_262.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:08,219 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 08:30:08,275 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 08:30:08,814 - ERROR - app.detection.model - Error processing image /app/uploads/pm_263.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:08,818 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_263.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:08,818 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 08:30:08,882 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 08:30:09,292 - ERROR - app.detection.model - Error processing image /app/uploads/pm_264.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:09,295 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_264.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:09,296 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 08:30:09,306 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 08:30:09,793 - ERROR - app.detection.model - Error processing image /app/uploads/pm_265.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:09,810 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_265.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:09,810 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 08:30:09,815 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 08:30:10,361 - ERROR - app.detection.model - Error processing image /app/uploads/pm_266.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:10,364 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_266.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:10,364 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 08:30:10,366 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 08:30:10,725 - ERROR - app.detection.model - Error processing image /app/uploads/pm_267.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:10,727 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_267.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:10,728 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 08:30:10,740 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 08:30:11,522 - ERROR - app.detection.model - Error processing image /app/uploads/pm_268.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:11,558 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_268.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:11,559 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 08:30:11,601 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 08:30:12,362 - ERROR - app.detection.model - Error processing image /app/uploads/pm_269.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:12,365 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_269.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:30:12,366 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-09-25 08:30:12,367 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-09-25 08:30:12,368 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-09-25 08:30:12,382 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:30:12] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 08:32:41,507 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 08:32:41,511 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 08:32:41,512 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pf_6.jpg
+2025-09-25 08:32:41,556 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_6.jpg
+2025-09-25 08:32:43,251 - ERROR - app.detection.model - Error processing image /app/uploads/pf_6.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:43,256 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_6.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:43,257 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pf_7.jpg
+2025-09-25 08:32:43,263 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_7.jpg
+2025-09-25 08:32:44,597 - ERROR - app.detection.model - Error processing image /app/uploads/pf_7.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:44,602 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_7.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:44,602 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pf_9.jpg
+2025-09-25 08:32:44,652 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_9.jpg
+2025-09-25 08:32:45,201 - ERROR - app.detection.model - Error processing image /app/uploads/pf_9.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:45,203 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_9.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:45,203 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pf_50.jpg
+2025-09-25 08:32:45,209 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_50.jpg
+2025-09-25 08:32:45,610 - ERROR - app.detection.model - Error processing image /app/uploads/pf_50.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:45,612 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_50.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:45,612 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pf_51.jpg
+2025-09-25 08:32:45,619 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-09-25 08:32:46,007 - ERROR - app.detection.model - Error processing image /app/uploads/pf_51.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:46,010 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_51.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:46,010 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pf_51.jpg
+2025-09-25 08:32:46,010 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-09-25 08:32:46,429 - ERROR - app.detection.model - Error processing image /app/uploads/pf_51.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:46,431 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_51.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:46,431 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pf_52.jpg
+2025-09-25 08:32:46,443 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_52.jpg
+2025-09-25 08:32:46,898 - ERROR - app.detection.model - Error processing image /app/uploads/pf_52.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:46,900 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_52.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:46,901 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pf_53.jpg
+2025-09-25 08:32:46,909 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_53.jpg
+2025-09-25 08:32:47,326 - ERROR - app.detection.model - Error processing image /app/uploads/pf_53.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:47,328 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_53.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:47,328 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pf_57.jpg
+2025-09-25 08:32:47,333 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_57.jpg
+2025-09-25 08:32:47,716 - ERROR - app.detection.model - Error processing image /app/uploads/pf_57.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:47,718 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_57.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:47,718 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pf_58.jpg
+2025-09-25 08:32:47,725 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_58.jpg
+2025-09-25 08:32:48,113 - ERROR - app.detection.model - Error processing image /app/uploads/pf_58.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:48,115 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_58.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:32:48,116 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-09-25 08:32:48,116 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-09-25 08:32:48,116 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-09-25 08:32:48,123 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:32:48] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 08:36:38,842 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:36:38] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-09-25 08:36:59,637 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:36:59] "GET / HTTP/1.1" 200 -
+2025-09-25 08:37:00,807 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:37:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-25 08:37:07,039 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:37:07] "GET / HTTP/1.1" 200 -
+2025-09-25 08:39:10,476 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 08:39:10,478 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 08:39:10,479 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pf_6.jpg
+2025-09-25 08:39:10,480 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_6.jpg
+2025-09-25 08:39:12,334 - ERROR - app.detection.model - Error processing image /app/uploads/pf_6.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:12,340 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_6.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:12,340 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pf_7.jpg
+2025-09-25 08:39:12,341 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_7.jpg
+2025-09-25 08:39:12,795 - ERROR - app.detection.model - Error processing image /app/uploads/pf_7.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:12,798 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_7.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:12,798 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pf_9.jpg
+2025-09-25 08:39:12,799 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_9.jpg
+2025-09-25 08:39:13,171 - ERROR - app.detection.model - Error processing image /app/uploads/pf_9.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:13,174 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_9.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:13,174 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pf_50.jpg
+2025-09-25 08:39:13,174 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_50.jpg
+2025-09-25 08:39:13,572 - ERROR - app.detection.model - Error processing image /app/uploads/pf_50.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:13,575 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_50.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:13,575 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pf_51.jpg
+2025-09-25 08:39:13,575 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-09-25 08:39:13,959 - ERROR - app.detection.model - Error processing image /app/uploads/pf_51.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:13,962 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_51.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:13,962 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pf_51.jpg
+2025-09-25 08:39:13,962 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_51.jpg
+2025-09-25 08:39:14,362 - ERROR - app.detection.model - Error processing image /app/uploads/pf_51.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:14,365 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_51.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:14,365 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pf_52.jpg
+2025-09-25 08:39:14,365 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_52.jpg
+2025-09-25 08:39:14,766 - ERROR - app.detection.model - Error processing image /app/uploads/pf_52.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:14,769 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_52.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:14,769 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pf_53.jpg
+2025-09-25 08:39:14,769 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_53.jpg
+2025-09-25 08:39:15,142 - ERROR - app.detection.model - Error processing image /app/uploads/pf_53.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:15,144 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_53.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:15,144 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pf_57.jpg
+2025-09-25 08:39:15,145 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_57.jpg
+2025-09-25 08:39:15,519 - ERROR - app.detection.model - Error processing image /app/uploads/pf_57.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:15,522 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_57.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:15,522 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pf_58.jpg
+2025-09-25 08:39:15,522 - INFO - app.detection.model - Starting detection for image: /app/uploads/pf_58.jpg
+2025-09-25 08:39:15,888 - ERROR - app.detection.model - Error processing image /app/uploads/pf_58.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:15,891 - WARNING - app.detection.analysis - Skipping image /app/uploads/pf_58.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:15,891 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-09-25 08:39:15,891 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-09-25 08:39:15,891 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-09-25 08:39:15,894 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:39:15] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 08:39:43,825 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 08:39:43,827 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 08:39:43,828 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_260.jpg
+2025-09-25 08:39:43,828 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_260.jpg
+2025-09-25 08:39:44,506 - ERROR - app.detection.model - Error processing image /app/uploads/pm_260.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:44,512 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_260.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:44,512 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 08:39:44,513 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 08:39:44,807 - ERROR - app.detection.model - Error processing image /app/uploads/pm_261.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:44,811 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_261.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:44,812 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 08:39:44,812 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 08:39:45,107 - ERROR - app.detection.model - Error processing image /app/uploads/pm_262.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,112 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_262.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,112 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 08:39:45,112 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 08:39:45,404 - ERROR - app.detection.model - Error processing image /app/uploads/pm_263.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,408 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_263.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,408 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 08:39:45,409 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 08:39:45,700 - ERROR - app.detection.model - Error processing image /app/uploads/pm_264.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,704 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_264.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,704 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 08:39:45,704 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 08:39:45,978 - ERROR - app.detection.model - Error processing image /app/uploads/pm_265.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,983 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_265.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:45,984 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 08:39:45,984 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 08:39:46,299 - ERROR - app.detection.model - Error processing image /app/uploads/pm_266.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:46,302 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_266.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:46,303 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 08:39:46,303 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 08:39:46,596 - ERROR - app.detection.model - Error processing image /app/uploads/pm_267.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:46,599 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_267.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:46,599 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 08:39:46,600 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 08:39:46,892 - ERROR - app.detection.model - Error processing image /app/uploads/pm_268.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:46,896 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_268.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:46,897 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 08:39:46,897 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 08:39:47,188 - ERROR - app.detection.model - Error processing image /app/uploads/pm_269.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:47,192 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_269.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:39:47,193 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-09-25 08:39:47,193 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-09-25 08:39:47,193 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-09-25 08:39:47,194 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:39:47] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 08:51:16,583 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:51:16] "[31m[1mGET /diagnose HTTP/1.1[0m" 405 -
+2025-09-25 08:51:34,434 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:51:34] "[31m[1mGET /diagnose HTTP/1.1[0m" 405 -
+2025-09-25 08:51:40,302 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 08:51:40,303 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 08:51:40,303 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_260.jpg
+2025-09-25 08:51:40,304 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_260.jpg
+2025-09-25 08:51:41,133 - ERROR - app.detection.model - Error processing image /app/uploads/pm_260.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:41,138 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_260.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:41,138 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 08:51:41,138 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 08:51:41,747 - ERROR - app.detection.model - Error processing image /app/uploads/pm_261.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:41,751 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_261.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:41,751 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 08:51:41,751 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 08:51:42,231 - ERROR - app.detection.model - Error processing image /app/uploads/pm_262.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:42,236 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_262.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:42,236 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 08:51:42,236 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 08:51:42,563 - ERROR - app.detection.model - Error processing image /app/uploads/pm_263.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:42,567 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_263.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:42,567 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 08:51:42,568 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 08:51:42,888 - ERROR - app.detection.model - Error processing image /app/uploads/pm_264.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:42,892 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_264.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:42,892 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 08:51:42,893 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 08:51:43,198 - ERROR - app.detection.model - Error processing image /app/uploads/pm_265.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:43,203 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_265.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:43,203 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 08:51:43,203 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 08:51:43,495 - ERROR - app.detection.model - Error processing image /app/uploads/pm_266.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:43,499 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_266.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:43,499 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 08:51:43,500 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 08:51:43,886 - ERROR - app.detection.model - Error processing image /app/uploads/pm_267.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:43,898 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_267.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:43,899 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 08:51:43,899 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 08:51:44,275 - ERROR - app.detection.model - Error processing image /app/uploads/pm_268.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:44,280 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_268.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:44,281 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 08:51:44,281 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 08:51:44,600 - ERROR - app.detection.model - Error processing image /app/uploads/pm_269.jpg: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:44,604 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_269.jpg due to error: Error processing image: 'AAttn' object has no attribute 'qkv'
+2025-09-25 08:51:44,604 - INFO - app.detection.analysis - Analysis completed: Status=NEGATIVE, Total Parasites=0,No parasites detected, Total WBCs=0, Ratio=0.00
+2025-09-25 08:51:44,605 - INFO - app.detection.analysis - Analysis summary: 0/10 images successfully processed
+2025-09-25 08:51:44,605 - INFO - app.routes - Diagnosis completed successfully: Status=NEGATIVE
+2025-09-25 08:51:44,608 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 08:51:44] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 10:58:12,987 - INFO - root - Logging configuration completed
+2025-09-25 10:58:13,037 - ERROR - app.detection.model - Failed to load YOLO model: Can't get attribute 'C3k2' on <module 'ultralytics.nn.modules.block' from '/opt/miniconda3/envs/DiagnosisApi_Env/lib/python3.12/site-packages/ultralytics/nn/modules/block.py'>
+2025-09-25 11:04:55,172 - INFO - root - Logging configuration completed
+2025-09-25 11:04:55,175 - ERROR - app.detection.model - Failed to load YOLO model: Model file not found at app/models/trained_on_2530_dset
+2025-09-25 11:06:36,401 - INFO - root - Logging configuration completed
+2025-09-25 11:06:36,448 - ERROR - app.detection.model - Failed to load YOLO model: Can't get attribute 'SCDown' on <module 'ultralytics.nn.modules.block' from '/opt/miniconda3/envs/DiagnosisApi_Env/lib/python3.12/site-packages/ultralytics/nn/modules/block.py'>
+2025-09-25 11:08:19,346 - INFO - root - Logging configuration completed
+2025-09-25 11:08:19,355 - ERROR - app.detection.model - Failed to load YOLO model: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL ultralytics.nn.tasks.DetectionModel was not an allowed global by default. Please use `torch.serialization.add_safe_globals([ultralytics.nn.tasks.DetectionModel])` or the `torch.serialization.safe_globals([ultralytics.nn.tasks.DetectionModel])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+2025-09-25 11:11:51,190 - INFO - root - Logging configuration completed
+2025-09-25 11:11:51,210 - ERROR - app.detection.model - Failed to load YOLO model: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL ultralytics.nn.tasks.DetectionModel was not an allowed global by default. Please use `torch.serialization.add_safe_globals([ultralytics.nn.tasks.DetectionModel])` or the `torch.serialization.safe_globals([ultralytics.nn.tasks.DetectionModel])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+2025-09-25 11:15:15,639 - INFO - root - Logging configuration completed
+2025-09-25 11:15:15,647 - ERROR - app.detection.model - Failed to load YOLO model: 'str' object has no attribute '__module__'
+2025-09-25 11:20:29,076 - INFO - root - Logging configuration completed
+2025-09-25 11:20:29,086 - ERROR - app.detection.model - Failed to load YOLO model: Can't get attribute 'SCDown' on <module 'ultralytics.nn.modules.block' from '/opt/miniconda3/envs/DiagnosisApi_Env/lib/python3.12/site-packages/ultralytics/nn/modules/block.py'>
+2025-09-25 11:22:31,565 - INFO - root - Logging configuration completed
+2025-09-25 11:22:31,641 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/malaria_yolov10.pt
+2025-09-25 11:22:31,642 - INFO - app - Flask application initialized successfully
+2025-09-25 11:22:36,651 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.3:5000
+2025-09-25 11:22:36,651 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-09-25 09:25:07,524 - INFO - root - Logging configuration completed
+2025-09-25 09:25:07,662 - INFO - app.detection.model - Successfully loaded YOLO model from app/models/malaria_yolov10.pt
+2025-09-25 09:25:07,663 - INFO - app - Flask application initialized successfully
+2025-09-25 09:25:07,666 - INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.5:5000
+2025-09-25 09:25:07,666 - INFO - werkzeug - [33mPress CTRL+C to quit[0m
+2025-09-25 09:29:02,613 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:29:02,620 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:29:02,620 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_260.jpg
+2025-09-25 09:29:02,622 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_260.jpg
+2025-09-25 09:29:03,356 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:29:03,357 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:29:03,739 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:29:03,739 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:29:04,012 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:29:04,013 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:29:04,307 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:29:04,308 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:29:04,565 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:29:04,565 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:29:04,809 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:29:04,809 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:29:04,810 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:29:05,053 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:29:05,054 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:29:05,313 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:29:05,313 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:29:05,314 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:29:05,554 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:29:05,554 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:29:05,799 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:29:05,799 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=12,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=6, Ratio=2.00
+2025-09-25 09:29:05,799 - INFO - app.detection.analysis - Analysis summary: 10/10 images successfully processed
+2025-09-25 09:29:05,799 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:29:05,808 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:29:05] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:33:33,817 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:33:33,819 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:33:33,820 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:33:33,822 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:33:33,822 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:33:33,822 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:33:33,822 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:33:34,180 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:33:34,180 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:33:34,444 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:33:34,444 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:33:34,689 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:33:34,689 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:33:34,945 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:33:34,945 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:33:35,180 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:33:35,180 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:33:35,180 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:33:35,417 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:33:35,418 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:33:35,650 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:33:35,650 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:33:35,650 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:33:35,898 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:33:35,899 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:33:36,161 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:33:36,161 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:33:36,161 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:33:36,161 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:33:36,163 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:33:36] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:26,102 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:26,107 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:26,107 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:26,108 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:26,108 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:26,108 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:26,109 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:26,493 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:26,493 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:26,753 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:26,754 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:27,043 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:27,043 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:27,376 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:27,376 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:27,621 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:27,622 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:27,622 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:27,864 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:27,865 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:28,195 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:28,196 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:28,196 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:28,497 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:28,498 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:28,754 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:28,754 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:28,754 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:28,754 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:28,756 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:28] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:35,923 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:35,924 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:35,924 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:35,924 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:35,924 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:35,925 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:35,925 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:36,224 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:36,224 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:36,488 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:36,488 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:36,735 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:36,735 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:37,018 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:37,018 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:37,301 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:37,301 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:37,301 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:37,568 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:37,568 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:37,835 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:37,836 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:37,836 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:38,075 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:38,076 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:38,311 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:38,311 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:38,311 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:38,311 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:38,312 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:38] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:39,522 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:39,523 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:39,523 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:39,523 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:39,523 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:39,523 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:39,524 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:39,777 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:39,778 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:40,011 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:40,011 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:40,248 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:40,248 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:40,483 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:40,483 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:40,715 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:40,715 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:40,715 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:40,953 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:40,953 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:41,182 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:41,182 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:41,183 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:41,421 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:41,421 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:41,666 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:41,667 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:41,667 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:41,667 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:41,668 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:41] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:42,844 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:42,845 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:42,845 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:42,845 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:42,845 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:42,846 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:42,846 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:43,110 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:43,110 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:43,345 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:43,345 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:43,577 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:43,577 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:43,817 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:43,817 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:44,051 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:44,051 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:44,051 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:44,284 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:44,284 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:44,519 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:44,519 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:44,519 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:44,757 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:44,757 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:45,010 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:45,010 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:45,011 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:45,011 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:45,012 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:45] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:46,150 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:46,151 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:46,151 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:46,151 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:46,151 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:46,152 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:46,152 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:46,403 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:46,403 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:46,647 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:46,647 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:46,908 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:46,908 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:47,147 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:47,147 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:47,398 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:47,398 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:47,398 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:47,628 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:47,628 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:47,855 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:47,855 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:47,856 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:48,103 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:48,104 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:48,334 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:48,334 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:48,334 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:48,334 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:48,335 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:48] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:49,188 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:49,188 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:49,188 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:49,188 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:49,188 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:49,189 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:49,189 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:49,569 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:49,569 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:49,817 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:49,817 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:50,061 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:50,061 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:50,297 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:50,297 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:50,534 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:50,535 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:50,535 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:50,765 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:50,766 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:51,002 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:51,002 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:51,002 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:51,232 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:51,233 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:51,506 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:51,510 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:51,510 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:51,510 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:51,512 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:51] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:52,295 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:52,295 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:52,296 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:52,296 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:52,296 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:52,296 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:52,297 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:52,597 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:52,597 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:52,854 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:52,855 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:53,185 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:53,185 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:53,465 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:53,466 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:53,739 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:53,739 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:53,739 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:54,000 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:54,000 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:54,272 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:54,272 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:54,272 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:54,505 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:54,506 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:54,737 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:54,737 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:54,737 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:54,738 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:54,739 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:54] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:55,317 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:55,317 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:55,317 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:55,318 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:55,318 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:55,318 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:55,318 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:55,587 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:55,588 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:55,822 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:55,822 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:56,067 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:56,068 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:56,305 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:56,305 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:56,559 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:56,559 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:56,559 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:56,794 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:56,795 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:38:57,035 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:57,035 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:38:57,035 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:38:57,311 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:38:57,311 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:38:57,572 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:57,572 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:38:57,572 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:38:57,572 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:38:57,573 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:38:57] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:38:58,175 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:38:58,175 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:38:58,175 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:38:58,176 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:58,176 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:38:58,176 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:38:58,176 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:38:58,542 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:38:58,542 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:38:58,830 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:38:58,830 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:38:59,105 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:38:59,105 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:38:59,365 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:38:59,365 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:38:59,667 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:38:59,667 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:38:59,667 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:38:59,905 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:38:59,905 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:00,165 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:00,165 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:00,165 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:00,417 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:00,417 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:00,669 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:00,669 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:00,670 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:00,670 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:00,671 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:00] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:01,329 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:01,329 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:01,329 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:01,330 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:01,330 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:01,330 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:01,330 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:01,584 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:01,584 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:01,846 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:01,846 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:02,091 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:02,091 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:02,357 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:02,358 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:02,613 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:02,613 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:02,613 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:02,879 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:02,879 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:03,134 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:03,135 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:03,135 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:03,371 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:03,371 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:03,610 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:03,610 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:03,610 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:03,610 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:03,611 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:03] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:04,257 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:04,258 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:04,259 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:04,259 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:04,259 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:04,259 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:04,260 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:04,540 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:04,541 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:04,783 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:04,783 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:05,033 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:05,033 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:05,335 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:05,336 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:05,614 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:05,614 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:05,614 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:05,859 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:05,859 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:06,141 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:06,142 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:06,142 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:06,412 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:06,413 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:06,652 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:06,652 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:06,653 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:06,653 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:06,653 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:06] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:07,289 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:07,290 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:07,290 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:07,290 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:07,290 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:07,291 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:07,291 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:07,579 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:07,580 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:07,845 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:07,845 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:08,104 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:08,105 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:08,368 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:08,368 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:08,598 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:08,598 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:08,598 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:08,837 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:08,837 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:09,108 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:09,111 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:09,112 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:09,388 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:09,389 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:09,678 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:09,678 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:09,678 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:09,679 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:09,682 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:09] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:10,354 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:10,354 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:10,355 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:10,355 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:10,355 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:10,355 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:10,355 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:10,613 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:10,614 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:10,851 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:10,851 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:11,449 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:11,449 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:11,927 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:11,927 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:12,259 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:12,260 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:12,260 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:12,581 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:12,581 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:12,872 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:12,872 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:12,873 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:13,188 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:13,188 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:13,470 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:13,470 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:13,471 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:13,471 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:13,474 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:13] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:16,882 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:16,883 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:16,884 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:16,884 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:16,885 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:16,885 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:16,885 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:17,207 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:17,207 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:17,458 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:17,458 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:17,698 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:17,698 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:17,931 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:17,931 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:18,183 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:18,183 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:18,184 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:18,421 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:18,421 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:18,665 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:18,665 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:18,666 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:18,903 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:18,903 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:19,150 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:19,150 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:19,150 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:19,151 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:19,151 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:19] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:19,822 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:19,822 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:19,822 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:19,822 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:19,823 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:19,823 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:19,823 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:20,100 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:20,100 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:20,350 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:20,351 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:20,589 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:20,589 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:20,831 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:20,831 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:21,078 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:21,078 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:21,079 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:21,328 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:21,328 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:21,571 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:21,571 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:21,571 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:21,822 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:21,822 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:22,068 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:22,069 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:22,069 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:22,069 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:22,071 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:22] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:22,790 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:22,792 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:22,792 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:22,793 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:22,794 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:22,795 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:22,795 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:23,098 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:23,099 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:23,356 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:23,356 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:23,598 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:23,598 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:23,836 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:23,837 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:24,096 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:24,097 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:24,097 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:24,340 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:24,341 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:24,594 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:24,594 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:24,594 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:24,847 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:24,847 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:25,117 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:25,118 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:25,118 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:25,118 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:25,119 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:25] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:25,825 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:25,826 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:25,826 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:25,827 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:25,827 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:25,827 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:25,827 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:26,319 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:26,320 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:26,607 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:26,607 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:26,855 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:26,856 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:27,115 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:27,115 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:27,386 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:27,386 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:27,387 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:27,630 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:27,630 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:27,877 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:27,877 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:27,877 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:28,136 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:28,137 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:28,387 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:28,387 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:28,388 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:28,388 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:28,388 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:28] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:29,169 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:29,169 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:29,169 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:29,170 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:29,170 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:29,170 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:29,170 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:29,436 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:29,436 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:29,677 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:29,677 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:29,963 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:29,963 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:30,227 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:30,227 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:30,478 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:30,478 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:30,478 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:30,719 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:30,719 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:31,071 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:31,071 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:31,071 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:31,329 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:31,329 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:31,574 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:31,574 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:31,575 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:31,575 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:31,575 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:31] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:32,336 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:32,336 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:32,337 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:32,337 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:32,337 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:32,338 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:32,338 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:32,587 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:32,587 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:32,852 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:32,852 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:33,114 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:33,114 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:33,414 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:33,414 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:33,648 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:33,648 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:33,648 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:33,894 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:33,894 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:34,142 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:34,142 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:34,142 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:34,388 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:34,388 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:34,623 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:34,623 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:34,623 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:34,623 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:34,625 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:34] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:35,536 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:35,536 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:35,536 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:35,536 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:35,537 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:35,537 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:35,537 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:35,798 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:35,798 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:36,167 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:36,167 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:36,427 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:36,427 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:36,672 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:36,672 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:36,921 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:36,922 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:36,922 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:37,203 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:37,203 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:37,495 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:37,495 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:37,496 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:37,738 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:37,738 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:37,984 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:37,984 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:37,984 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:37,985 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:37,985 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:37] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:38,868 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:38,868 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:38,869 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:38,869 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:38,869 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:38,869 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:38,870 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:39,136 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:39,137 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:39,382 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:39,383 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:39,614 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:39,614 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:39,870 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:39,870 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:40,108 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:40,108 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:40,108 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:40,344 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:40,345 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:40,575 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:40,576 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:40,576 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:40,805 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:40,806 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:41,036 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:41,036 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:41,037 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:41,037 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:41,037 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:41] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:41,573 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:41,574 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:41,574 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:41,574 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:41,574 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:41,575 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:41,575 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:41,927 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:41,927 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:42,178 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:42,179 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:42,428 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:42,428 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:42,670 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:42,670 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:42,935 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:42,936 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:42,936 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:43,187 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:43,188 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:43,443 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:43,444 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:43,444 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:43,684 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:43,684 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:43,930 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:43,931 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:43,931 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:43,931 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:43,932 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:43] "POST /diagnose HTTP/1.1" 200 -
+2025-09-25 09:39:44,515 - INFO - app.routes - Received diagnosis request with 10 image paths
+2025-09-25 09:39:44,516 - INFO - app.detection.analysis - Starting analysis for 10 images
+2025-09-25 09:39:44,516 - INFO - app.detection.analysis - Processing image 1/10: /app/uploads/pm_2609.jpg
+2025-09-25 09:39:44,517 - ERROR - app.detection.model - Error processing image /app/uploads/pm_2609.jpg: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:44,517 - WARNING - app.detection.analysis - Skipping image /app/uploads/pm_2609.jpg due to error: Error processing image: Image not found at /app/uploads/pm_2609.jpg
+2025-09-25 09:39:44,517 - INFO - app.detection.analysis - Processing image 2/10: /app/uploads/pm_261.jpg
+2025-09-25 09:39:44,517 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_261.jpg
+2025-09-25 09:39:44,776 - INFO - app.detection.analysis - Processing image 3/10: /app/uploads/pm_262.jpg
+2025-09-25 09:39:44,777 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_262.jpg
+2025-09-25 09:39:45,029 - INFO - app.detection.analysis - Processing image 4/10: /app/uploads/pm_263.jpg
+2025-09-25 09:39:45,029 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_263.jpg
+2025-09-25 09:39:45,274 - INFO - app.detection.analysis - Processing image 5/10: /app/uploads/pm_264.jpg
+2025-09-25 09:39:45,274 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_264.jpg
+2025-09-25 09:39:45,521 - INFO - app.detection.analysis - Processing image 6/10: /app/uploads/pm_265.jpg
+2025-09-25 09:39:45,522 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_265.jpg
+2025-09-25 09:39:45,762 - INFO - app.detection.model - Detection completed for /app/uploads/pm_265.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:45,762 - INFO - app.detection.analysis - Processing image 7/10: /app/uploads/pm_266.jpg
+2025-09-25 09:39:45,762 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_266.jpg
+2025-09-25 09:39:46,006 - INFO - app.detection.analysis - Processing image 8/10: /app/uploads/pm_267.jpg
+2025-09-25 09:39:46,006 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_267.jpg
+2025-09-25 09:39:46,314 - INFO - app.detection.model - Detection completed for /app/uploads/pm_267.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:46,317 - INFO - app.detection.analysis - Processing image 9/10: /app/uploads/pm_268.jpg
+2025-09-25 09:39:46,317 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_268.jpg
+2025-09-25 09:39:46,568 - INFO - app.detection.analysis - Processing image 10/10: /app/uploads/pm_269.jpg
+2025-09-25 09:39:46,568 - INFO - app.detection.model - Starting detection for image: /app/uploads/pm_269.jpg
+2025-09-25 09:39:46,809 - INFO - app.detection.model - Detection completed for /app/uploads/pm_269.jpg: No parasites detected, 0 WBCs
+2025-09-25 09:39:46,809 - INFO - app.detection.analysis - Analysis completed: Status=POSITIVE, Total Parasites=10,{'Most Probable Parasite': 'PM', 'Confidence level': '0.86'}, Total WBCs=3, Ratio=3.33
+2025-09-25 09:39:46,809 - INFO - app.detection.analysis - Analysis summary: 9/10 images successfully processed
+2025-09-25 09:39:46,809 - INFO - app.routes - Diagnosis completed successfully: Status=POSITIVE
+2025-09-25 09:39:46,810 - INFO - werkzeug - 192.168.65.1 - - [25/Sep/2025 09:39:46] "POST /diagnose HTTP/1.1" 200 -

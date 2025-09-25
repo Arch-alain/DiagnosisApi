@@ -1,0 +1,7 @@
+datasets_dir: /app/datasets
+weights_dir: weights
+runs_dir: runs
+uuid: 9f26b30c1ae33564592f804593bc15e55b1228ad9a9c5627aadfebeb7d0fcd6c
+sync: true
+api_key: ''
+settings_version: 0.0.3

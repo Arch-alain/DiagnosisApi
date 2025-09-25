@@ -1,2 +1,9 @@
 server.host: "0.0.0.0"
 elasticsearch.hosts: ["http://elasticsearch:9200"]
+
+#Generated usung openssl
+xpack.encryptedSavedObjects.encryptionKey: 82dd2d2ce7c00183df4da9dab904e2a3
+
+# From Google
+xpack.reporting.encryptionKey: "ezV7$Qv!cJ+Jx2#Zg*VdE5nMf6^TyU4o"
+xpack.security.encryptionKey: "Yh3+RnW!kSgD7^Fp9*VtQ2zKp8LcE6uJ"

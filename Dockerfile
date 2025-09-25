@@ -1,14 +1,15 @@
-# Use official Python slim image for smaller footprint
+# Use official Python slim image
 FROM python:3.9-slim
 
 # Set working directory
 WORKDIR /app
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
+    build-essential \
     libpq-dev \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
@@ -22,10 +23,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Create necessary directories with appropriate permissions
-RUN mkdir -p /app/logs /app/uploads && chown -R nobody:nogroup /app/logs /app/uploads && chmod -R 755 /app/logs /app/uploads
+RUN mkdir -p /app/logs /app/uploads \
+    && chown -R nobody:nogroup /app/logs /app/uploads \
+    && chmod -R 755 /app/logs /app/uploads
 
-
-# Set environment variables for Python and Ultralytics
+# Set environment variables
 ENV PYTHONUNBUFFERED=1 \
     FLASK_ENV=production \
     YOLO_CONFIG_DIR=/app/config
@@ -33,5 +35,5 @@ ENV PYTHONUNBUFFERED=1 \
 # Expose port
 EXPOSE 5000
 
-# Run the application using run.py
+# Run the app
 CMD ["python", "run.py"]
